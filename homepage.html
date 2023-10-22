@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EisenGil Fier Forjat</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="png2_fier.png" type="image/x-icon">
+    <script type="text/javascript" src="homepage.js"></script>
+</head>
+
+
+
+<body>
+    <div id="home"></div>
+    <ul class="menu">
+        <li> <img src="logo_alb_png.png" height="100" alt="EISENGIL"> </li>
+        <li> <a href = "gallery.html"> GALERIE </a></li>
+        <li> <a href="#gard"> PORTI SI GARDURI</a></li>
+        <li> <a href="#scari"> SCARI</a></li>
+        <li> <a href="#balustrada"> BALUSTRADE SI SISTEME DE IMPREJMUIRE </a></li>
+        <li class="dropdown">
+            <a class="dropbtn"> CONTACT </a>
+            <div class="dropdown-content">
+                 <p> Telefon: 0723 186 513 </p>
+                 <p> Email: ggb173@yahoo.com</p>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+    <div class="container" id="gard">
+        <img src="poarta_fundal3.png" alt="404 not found">
+        <div class="textpoza_gard">
+            Porti si Garduri
+            <p> Produsele sunt create precis pe baza unor masuratori efectuate in timp util de catre noi.</p>
+        </div>
+    </div>
+    <br>
+    <div class="descriere" id ="desc_gard">
+        Gardurile si portile facute din otel inoxidabil ofera un grad maxim de protectie si eleganta.
+        Acestea sunt construite din materiale de inalta calitate, care asigura durabilitatea acestora. Folosirea metalului pentru construirea acestora, asigura ca acestea sunt rezistente la intemperii si la uzura naturala. Astfel, investitia ta in aceste produse este una pe termen lung, avand in vedere ca nu vei fi nevoit sa le inlocuiesti sau sa le repari prea curand
+    </div>
+    <br>
+
+
+
+
+
+
+    <div class="container" id="scari">
+        <img src="scari_fundal2.png" alt="404 not found">
+        <div class="textpoza_scari">
+           Scari
+            <p> Produsele vin la pachet cu balustrada inclusa in pret.</p>
+        </div>
+    </div>
+    <br>
+    <div class="descriere">
+       Scarile, alaturi de grilajele de sustinere sunt de calitate maxima garantata.
+        In afara de durabilitate si siguranta, scarile metalice au un aspect uimitor. Acestea pot fi personalizate in functie de preferintele tale, astfel incat sa se potriveasca cu designul si stilul proprietatii tale. Scarile sunt disponibile intr-o varietate de modele si culori, astfel incat sa poti alege cel mai potrivit aspect pentru proprietatea ta.
+    </div>
+    <br>
+
+
+
+    <div class="container" id="balustrada">
+        <img src="balustrada_fundal2.png" alt="404 not found">
+        <div class="textpoza_bal">
+            Balustrade
+            <p> si sisteme de imprejmuire</p>
+        </div>
+    </div>
+    <br>
+    <div class="descriere">
+        Balustradele pot fi comandate pentru orice perimetru in limita stocului disponibil.
+        Balustradele metalice Eisengil nu au nevoie de intretinere. Datorita materialelor de inalta calitate din care sunt construite, si vopsirea in camp electrostatic, acestea nu necesita intretinere. In plus, acestea sunt zincate astfel incat sa poata rezista in timp fara probleme.
+    </div>
+
+
+    <div class="form_container" style = "padding-left: 10px;">
+        <form method="post" id = "formular">
+            <h1>Comanda produse din fier forjat</h1>
+
+            <label for="product">Tip produs</label>
+            <select id="product" name="product">
+                <option value="gard">Gard</option>
+                <option value="scari">Scari</option>
+                <option value="balustrada">Balustrada</option>
+                <option value="custom">Comanda custom</option>
+            </select>
+            <br>
+            <label for="est">Data estimata a terminarii:</label>
+            <input type="text" id="est" name="est" placeholder="Se va calcula...">
+            <br>
+
+            <button id="calculate_button"> Calculate </button>
+            <br>
+
+            <label for="fname">Nume</label>
+            <input type="text" id="fname" name="firstname" placeholder="Numele tau..">
+            <br>
+
+            <label for="lname">Prenume</label>
+            <input type="text" id="lname" name="lastname" placeholder="Prenumele tau..">
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email-ul tau..">
+            <br>
+
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Telefonul tau.." >
+            <br>
+
+            <label for="address">Adresa</label>
+            <input type="text" id="address" name="address" placeholder="Oras ..., Str ..., Nr ..." required pattern="Oras\ [A-Za-z]+, Str\ [A-Za-z]+, Nr\ [0-9]+">
+            <br>
+
+            <label for="quantity">Numar produse</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Numarul de produse dorite..">
+            <br>
+
+            <button type="submit" id="submit_button"> Submit </button>
+        </form>
+    </div>
+
+
+
+
+    <ul class="bottombar">
+        <li> <img src="logo_alb_png.png" height="100" alt="EISENGIL"> </li>
+        <li class ="bottombar_text"> © 2023 Eisengil – All rights reserved. </li>
+        <li class="dropdown">
+            <a class="dropbtn"> CONTACT </a>
+            <div class="dropdown-content">
+                <p> Telefon: 0723 186 513 </p>
+                <p> Email: ggb173@yahoo.com</p>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+</body>
+</html>

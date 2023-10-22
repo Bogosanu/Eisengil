@@ -1,0 +1,333 @@
+
+body {
+    background: #cccccc;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('custom_font/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+
+a {font-family: Oswald;
+    font-weight: 600;
+    font-size: 17px;
+    font-style: normal;
+  }
+
+p {
+    font-family: "Oswald";
+    padding-left: 30px;
+}
+
+.bottombar {
+    background: dimgrey;
+    bottom: 0;
+    width: 98%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bottombar_text{
+    color: white;
+    font-family: "Oswald";
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 1em;
+
+}
+.menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background: dimgrey;
+    list-style: none;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    z-index: 5;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form_container{
+    display: flex;
+    width: 20%;
+    height: 450px;
+    background: dimgray;
+    transform: translate(0, 30px);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 75%;
+    overflow: hidden;
+}
+
+form label, form h1{
+    color: white;
+    font-family: "Oswald";
+    font-size: 1vw;
+    text-align: center;
+    padding: 1em;
+    align-self: end;
+}
+form input{
+    font-size: 1vw;
+}
+
+form button{
+    margin-top: 20px;
+}
+.menu a, .dropbtn{
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    padding: 1em;
+    color: white;
+    width: 120px;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropbtn {
+    padding-left: 5em;
+}
+
+.menu a:hover {
+    background: gray;
+}
+
+.menu img {
+    padding: 1em;
+    align-self: flex-start;
+    transition: transform 1s, height 500ms, width 500ms;
+    height: 100px;
+    width: 88px;
+
+}
+
+.menu img:hover{
+    transform: rotate(360deg);
+    height: 125px;
+    width: 100px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: relative;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content p:hover {background-color: gray;}
+
+.dropdown:hover .dropdown-content {
+    display: contents;
+}
+
+
+.descriere {
+    font-family: "Oswald";
+    font-size: 2vw;
+    position: relative;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+
+
+
+.container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.container img {
+    width:100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.textpoza_gard {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-size: 5vw;
+    font-family: Oswald;
+    transform: translate(-50%, -50%);
+}
+
+.textpoza_gard p {
+    font-size: 3vw;
+    text-align: left;
+    transform: translate(25%)
+}
+
+.textpoza_bal{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    color: white;
+    font-size: 5vw;
+    font-family: Oswald;
+    transform: translate(-50%, -50%);
+}
+
+.textpoza_bal p {
+    font-size: 3vw;
+    text-align: left;
+    transform: translate(25%)
+}
+
+.textpoza_scari{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    color: white;
+    font-size: 5vw;
+    font-family: Oswald;
+    transform: translate(-50%, -50%);
+}
+
+.textpoza_scari p {
+    font-size: 3vw;
+    text-align: left;
+    transform: translate(25%)
+}
+@keyframes start {
+    from {
+        background: white;
+        top: -200px;
+        transform: translate(0, -200px);
+    }
+    to {
+        background: dimgrey;
+        top: 0px;
+    }
+
+}
+.gallery {
+    width: 1220px;
+    display: flex;
+    overflow-x: scroll;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery img:hover {
+    border: 5px solid #202020;
+}
+
+.gallery img {
+    border: 5px solid #777;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#back, #front{
+    cursor: pointer;
+    margin: 40px;
+    transition: transform 0.5s;
+    width: 100px;
+    height: 100px;
+}
+
+#back:hover, #front:hover{
+    transform: scale(1.1);
+}
+
+#calculate_button{
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 500px)
+{
+ .menu {
+     flex-flow: column wrap;
+     align-items: flex-start;
+
+ }
+ .menu a, .dropbtn{
+     transform: translate(-10%);
+     font-size: 2vw;
+ }
+ .menu img, .bottombar img {
+     height: 90px;
+     width: 80px;
+ }
+ .dropdown-content p {
+     font-size: 2vw;
+ }
+ div.gallery {
+     width: 350px;
+ }
+ .descriere {
+     font-size: 3vw;
+ }
+#back, #front{
+    width: 30px;
+    height: 30px;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+    form label, form h1 {
+        color: white;
+        font-family: "Oswald";
+        font-size: 2vw;
+        text-align: center;
+        padding: 1em;
+        align-self: end;
+    }
+
+    form input {
+        font-size: 1vw;
+    }
+    .bottombar{
+        height: 100px;
+    }
+    .form_container{
+        height: 410px;
+        width: 35%;
+        transform: translate(-30%);
+    }
+}
